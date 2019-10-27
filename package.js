@@ -1,6 +1,6 @@
 Package.describe({
   summary: "Exposing internal Meteor APIs to hack Meteor easily",
-  version: "2.1.1",
+  version: "2.1.2",
   git: "https://github.com/lamhieu-vk/meteorx.git",
   name: "lamhieu:meteorx",
 });
@@ -17,7 +17,7 @@ Package.onTest(function(api) {
 });
 
 function configurePackage(api) {
-  api.versionsFrom("METEOR@1.0");
+  api.versionsFrom("METEOR@1.8.1");
   api.use(["random", "mongo"], "server");
   api.add_files(["src/livedata.js", "src/mongo-livedata.js", "src/server.js"], "server");
 }
